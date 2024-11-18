@@ -251,32 +251,31 @@ class ViewVC: UIViewController {
         let section = NSCollectionLayoutSection(group: containerGroup)
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
+    }
+    
+    func getCrouselLayout() -> UICollectionViewCompositionalLayout {
         
-        
-        /*
-         
-         //--------- Carousel ---------//
-        let carouselItem = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.95), heightDimension: .absolute(200)))
-        carouselItem.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
-        
-        let carouselGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(200)), subitems: [caraousalItem])
-        
-        let carouselSection = NSCollectionLayoutSection(group: carouselGroup)
-        carouselSection.orthogonalScrollingBehavior = .paging
-        
-        carouselSection.visibleItemsInvalidationHandler = { (items, offset, environment) in
-            items.forEach { item in
-                let distanceFromCenter = abs((item.frame.midX - offset.x) - environment.container.contentSize.width / 2.0)
-                let minScale: CGFloat = 0.7
-                let maxScale: CGFloat = 1.1
-                let scale = max(maxScale - (distanceFromCenter / environment.container.contentSize.width), minScale)
-                item.transform = CGAffineTransform(scaleX: scale, y: scale)
-            }
-        }
-        
-        let layout = UICollectionViewCompositionalLayout(section: carouselSection)
-        return layout
-         */
+        //--------- Carousel ---------//
+       let carouselItem = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.95), heightDimension: .absolute(200)))
+       carouselItem.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+       
+       let carouselGroup = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(200)), subitems: [carouselItem])
+       
+       let carouselSection = NSCollectionLayoutSection(group: carouselGroup)
+       carouselSection.orthogonalScrollingBehavior = .paging
+       
+       carouselSection.visibleItemsInvalidationHandler = { (items, offset, environment) in
+           items.forEach { item in
+               let distanceFromCenter = abs((item.frame.midX - offset.x) - environment.container.contentSize.width / 2.0)
+               let minScale: CGFloat = 0.7
+               let maxScale: CGFloat = 1.1
+               let scale = max(maxScale - (distanceFromCenter / environment.container.contentSize.width), minScale)
+               item.transform = CGAffineTransform(scaleX: scale, y: scale)
+           }
+       }
+       
+       let layouts = UICollectionViewCompositionalLayout(section: carouselSection)
+       return layouts
     }
 }
 
