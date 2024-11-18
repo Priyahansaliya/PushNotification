@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "mannkibaatImage.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

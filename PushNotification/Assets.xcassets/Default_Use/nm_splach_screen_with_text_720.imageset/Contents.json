@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "nm_splach_screen_with_text_720.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

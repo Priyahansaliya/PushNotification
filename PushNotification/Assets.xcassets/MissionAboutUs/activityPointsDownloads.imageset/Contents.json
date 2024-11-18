@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "activityPointsDownloads.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

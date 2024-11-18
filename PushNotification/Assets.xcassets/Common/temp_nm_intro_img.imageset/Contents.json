@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "temp_nm_intro_img.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

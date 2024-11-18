@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_sidemenu_MannKiBaat.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

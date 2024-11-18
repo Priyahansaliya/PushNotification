@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_download_outline_black_48dp.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
